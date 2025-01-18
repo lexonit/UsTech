@@ -30,9 +30,9 @@ const Banner = () => {
             </p>
           </div>
           <Image
-            src="/assets/banner/Home-Page-Slider-1.webp"
+            src="/assets/banner/demo-form-image-emea.png"
             alt="banner-image"
-            width={1200}
+            width={900}
             height={600}
             className="rounded-lg mx-auto shadow-lg"
           />
