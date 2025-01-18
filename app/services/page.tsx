@@ -1,7 +1,7 @@
 // pages/index.js
 import React from 'react';
 
-const ServiceCard = ({ imgSrc, title, text }) => (
+const ServiceCard = ({ imgSrc, title, text }:{imgSrc: any, title: any, text: any}) => (
   <div className="max-w-xs mx-auto my-5 bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 duration-300">
     <div className="relative">
       <img src={imgSrc} alt={title} className="w-full h-48 object-cover" />
