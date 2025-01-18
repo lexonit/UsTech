@@ -38,15 +38,15 @@ const Navbar = () => {
               {/* LOGO */}
               <div className="flex flex-shrink-0 items-center">
                 <img
-                  className="block h-12 w-40 lg:hidden"
-                  src={"/assets/logo/logo.png"}
+                  className="block h-12 w-40 lg"
+                  src={"/assets/logo/logo.jpg"}
                   alt="dsign-logo"
                 />
-                <img
+                {/* <img
                   className="hidden h-full w-full lg:block"
-                  src={"/assets/logo/logo.png"}
+                  src={"/assets/logo/logo.jpg"}
                   alt="dsign-logo"
-                />
+                /> */}
               </div>
 
               {/* LINKS */}

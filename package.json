@@ -1,5 +1,5 @@
 {
-  "name": "dsign",
+  "name": "ustech",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -18,10 +18,10 @@
     "eslint": "8.40.0",
     "eslint-config-next": "13.4.2",
     "framer-motion": "^11.18.1",
-    "next": "^13.4.2",
+    "next": "^15.1.5",
     "postcss": "8.4.23",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "react-icons": "^5.4.0",
     "react-router-dom": "^7.1.2",
     "react-slick": "^0.29.0",
