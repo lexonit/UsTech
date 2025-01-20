@@ -23,7 +23,7 @@ const whydata: whydata[] = [
   },
   {
     heading: "Address",
-    subheading: "4440 W Devon Ave, Lincolnwood, IL 60712",
+    subheading: "US Tech Lightning Solutions",
   },
 ];
 

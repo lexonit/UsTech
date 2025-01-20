@@ -30,9 +30,9 @@ const Banner = () => {
             </p>
           </div>
           <Image
-            src="/assets/banner/Home-Page-Slider-1.webp"
+            src="/assets/banner/demo-form-image-emea.png"
             alt="banner-image"
-            width={1200}
+            width={900}
             height={600}
             className="rounded-lg mx-auto shadow-lg"
           />
@@ -51,7 +51,7 @@ const Banner = () => {
           </ul>
           <div className="mt-8 flex justify-center">
             <Image
-              src="https://img.freepik.com/free-photo/question-mark-icon-solving-problem-solution-concept_53876-13887.jpg?t=st=1737171259~exp=1737174859~hmac=01ffaea1165b51cbaaf23051543d8971e0ee9cfc746af769816b46338dc2c2a9&w=996"
+              src="https://img.freepik.com/free-photo/male-speaker-giving-presentation-hall-university-workshop-audience-conference-hall_155003-27445.jpg?t=st=1737977314~exp=1737980914~hmac=ad041f108546c0ae90e4afab2e38242226092293a4e5ab5c9d43a2895e55be60&w=996"
               alt="Why Choose Us"
               width={800}
               height={400}
@@ -77,12 +77,12 @@ const Banner = () => {
             >
               Get in Touch
             </button>
-            <button
+            {/* <button
               type="button"
               className="px-8 py-4 text-blue-500 bg-white border border-blue-500 hover:bg-blue-500 hover:text-white rounded-md font-medium shadow-md"
             >
               Learn More
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

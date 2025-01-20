@@ -37,7 +37,7 @@ const Footer = () => {
 
                     {/* COLUMN-1 */}
                     <div className='col-span-4 md:col-span-12 lg:col-span-4'>
-                        <img src={'/assets/footer/logo.svg'} alt="logo" className='pb-8' />
+                        <img src={'/assets/logo/UsTech.jpeg'} alt="logo" className='pb-8 w-[200px]' />
                         <div className='flex gap-4'>
                             <Link href="https://facebook.com" className='footer-fb-icons'>
                                 <Image src={'/assets/footer/facebook.svg'} alt="facebook" width={15} height={20} />
@@ -83,7 +83,7 @@ const Footer = () => {
                     <div className='col-span-4 md:col-span-4 lg:col-span-4'>
                         <div className="flex gap-2">
                             <Image src={'/assets/footer/mask.svg'} alt="mask-icon" width={24} height={24} />
-                            <h5 className="text-base font-normal text-offwhite">4440 W Devon Ave, Lincolnwood, IL 60712</h5>
+                            <h5 className="text-base font-normal text-offwhite">US Tech Lightning Solutions</h5>
                         </div>
                         <div className="flex gap-2 mt-10">
                             <Image src={'/assets/footer/telephone.svg'} alt="telephone-icon" width={24} height={24} />
@@ -91,7 +91,7 @@ const Footer = () => {
                         </div>
                         <div className="flex gap-2 mt-10">
                             <Image src={'/assets/footer/email.svg'} alt="email-icon" width={24} height={24} />
-                            <h5 className="text-base font-normal text-offwhite">info@gmail.com</h5>
+                            <h5 className="text-base font-normal text-offwhite">info@USTechLightningSolutions.com</h5>
                         </div>
                     </div>
 
@@ -99,7 +99,7 @@ const Footer = () => {
 
                 {/* All Rights Reserved */}
                 <div className='py-10 lg:flex items-center justify-between border-t border-t-bordertop'>
-                    <h4 className='text-offwhite text-sm text-center lg:text-start font-normal'>@2023 Agency. All Rights Reserved by <Link href="https://adminmart.com/" target="_blank"> Adminmart.com</Link></h4>
+                    <h4 className='text-offwhite text-sm text-center lg:text-start font-normal'>@2025 Agency. All Rights Reserved by <Link href="https://lexonit.com/" target="_blank"> lexonit.com</Link></h4>
                     <div className="flex gap-5 mt-5 lg:mt-0 justify-center lg:justify-start">
                         <h4 className='text-offwhite text-sm font-normal'><Link href="/" target="_blank">Privacy policy</Link></h4>
                         <div className="h-5 bg-bordertop w-0.5"></div>

@@ -8,17 +8,18 @@ interface datatype {
 
 const Aboutdata: datatype[] = [
     {
-        imgSrc: "/assets/network/bangladesh.svg",
-        country: "Bangladesh",
-        paragraph: 'Event madness gathering innoies, & tech enthusiasts in Speced.',
-
-    },
-    {
         imgSrc: "/assets/network/america.svg",
         country: "United States",
         paragraph: 'Event madness gathering innoies, & tech enthusiasts in Speced.',
 
     },
+    {
+        imgSrc: "/assets/network/bangladesh.svg",
+        country: "Bangladesh",
+        paragraph: 'Event madness gathering innoies, & tech enthusiasts in Speced.',
+
+    },
+    
     {
         imgSrc: "/assets/network/australia.svg",
         country: "Australia",
