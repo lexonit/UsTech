@@ -1,7 +1,14 @@
-// pages/index.js
-import React from 'react';
+import React from "react";
 
-const ServiceCard = ({ imgSrc, title, text }) => (
+// Define TypeScript types for the ServiceCard props
+interface ServiceCardProps {
+  imgSrc: string;
+  title: string;
+  text: string;
+}
+
+// ServiceCard Component
+const ServiceCard: React.FC<ServiceCardProps> = ({ imgSrc, title, text }) => (
   <div className="max-w-xs mx-auto my-5 bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 duration-300">
     <div className="relative">
       <img src={imgSrc} alt={title} className="w-full h-48 object-cover" />
@@ -13,12 +20,15 @@ const ServiceCard = ({ imgSrc, title, text }) => (
   </div>
 );
 
-const ServicePage = () => (
+// ServicePage Component
+const ServicePage: React.FC = () => (
   <div className="min-h-screen bg-gray-100 py-16">
     {/* Title Section */}
     <div className="text-center mb-16">
       <h2 className="text-3xl font-bold text-gray-900">Our Expertise</h2>
-      <p className="mt-4 text-lg text-gray-600">Explore our tailored Salesforce services designed to elevate your business.</p>
+      <p className="mt-4 text-lg text-gray-600">
+        Explore our tailored Salesforce services designed to elevate your business.
+      </p>
     </div>
 
     {/* Services Section */}
@@ -54,7 +64,9 @@ const ServicePage = () => (
       {/* Customer 360 Solutions Section */}
       <div className="text-center mt-16 mb-8">
         <h2 className="text-3xl font-bold text-gray-900">Customer 360 Solutions</h2>
-        <p className="mt-4 text-lg text-gray-600">Tailored solutions to meet your business needs across various Salesforce products.</p>
+        <p className="mt-4 text-lg text-gray-600">
+          Tailored solutions to meet your business needs across various Salesforce products.
+        </p>
       </div>
 
       {/* Customer Solutions Cards */}

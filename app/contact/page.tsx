@@ -11,14 +11,14 @@ const ContactUsPage = () => {
     message: '',
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e: { target: { name: any; value: any; }; }) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: { preventDefault: () => void; }) => {
     e.preventDefault();
     console.log('Form Submitted:', formData);
     // Add form submission logic here (e.g., sending form data to a server or email)
@@ -90,7 +90,7 @@ const ContactUsPage = () => {
                   onChange={handleChange}
                   className="w-full px-4 py-2 mt-2 border border-gray-300 rounded-lg"
                   placeholder="Your Message"
-                  rows="5"
+                  // rows="5"
                   required
                 />
               </div>
