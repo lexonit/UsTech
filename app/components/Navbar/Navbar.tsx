@@ -38,8 +38,8 @@ const Navbar = () => {
               {/* LOGO */}
               <div className="flex flex-shrink-0 items-center">
                 <img
-                  className="block h-20 w-80 lg"
-                  src={"/assets/logo/UsTech.jpeg"}
+                  className="block h-20 w-100 lg"
+                  src={"/assets/logo/UsTechLogo.svg"}
                   alt="dsign-logo"
                 />
                 {/* <img

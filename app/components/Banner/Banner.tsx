@@ -1,6 +1,7 @@
-'use client'; 
+'use client';
 import { useRouter } from 'next/navigation'; // Use next/navigation instead of next/router
 import Image from "next/image";
+import { motion } from "framer-motion"; // Import motion for animations
 
 const Banner = () => {
   const router = useRouter(); // Initialize the navigation hook
@@ -29,13 +30,26 @@ const Banner = () => {
               greater success.
             </p>
           </div>
-          <Image
-            src="/assets/banner/demo-form-image-emea.png"
-            alt="banner-image"
-            width={900}
-            height={600}
-            className="rounded-lg mx-auto shadow-lg"
-          />
+
+          {/* Animated Image with Slow Vertical Movement */}
+          <motion.div
+            animate={{
+              y: ["0%", "10%", "-5%", "0%"], // Vertical keyframes
+            }}
+            transition={{
+              duration: 10, // Slower movement (10 seconds per loop)
+              repeat: Infinity, // Infinite loop
+              ease: "easeInOut", // Smooth easing
+            }}
+          >
+            <Image
+              src="/assets/banner/heroimag1.svg"
+              alt="banner-image"
+              width={900}
+              height={600}
+              className="rounded-lg mx-auto shadow-lg"
+            />
+          </motion.div>
         </div>
 
         {/* Why Choose Us Section */}
@@ -77,12 +91,6 @@ const Banner = () => {
             >
               Get in Touch
             </button>
-            {/* <button
-              type="button"
-              className="px-8 py-4 text-blue-500 bg-white border border-blue-500 hover:bg-blue-500 hover:text-white rounded-md font-medium shadow-md"
-            >
-              Learn More
-            </button> */}
           </div>
         </div>
       </div>
