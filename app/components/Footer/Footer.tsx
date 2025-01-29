@@ -37,7 +37,8 @@ const Footer = () => {
 
                     {/* COLUMN-1 */}
                     <div className='col-span-4 md:col-span-12 lg:col-span-4'>
-                        <img src={'/assets/logo/UsTechLogo2.svg'} alt="logo" className='pb-8 w-[200px]' />
+                    <Image src={'/assets/logo/UsTechLogo2.svg'} alt="logo" width={200} height={80} />
+
                         <div className='flex gap-4'>
                             <Link href="https://facebook.com" className='footer-fb-icons'>
                                 <Image src={'/assets/footer/facebook.svg'} alt="facebook" width={15} height={20} />

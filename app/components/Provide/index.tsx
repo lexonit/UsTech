@@ -56,7 +56,7 @@ const Provide = () => {
                 Our Expertise
               </p>
               <p className="text-base lg:text-lg mt-4 font-normal leading-relaxed text-center lg:text-start text-bluegray">
-                At US Tech, we offer a wide range of Salesforce services tailored to your needs:
+                At US Tech, we offer a wide range of Salesforce services tailored to your needs&#39;:
               </p>
               
               {/* List without bullet points */}
@@ -79,7 +79,7 @@ const Provide = () => {
                 </li>
                 <li className="mb-4">
                   <h4 className="font-semibold text-black text-left lg:text-justify">
-                    Salesforce Customization & Development:
+                    Salesforce Customization &amp; Development:
                   </h4>
                   <p className="text-bluegray text-left lg:text-justify">
                     Optimize your Salesforce instance with custom solutions, tailored integrations, and automation to improve your business workflows.
@@ -87,7 +87,7 @@ const Provide = () => {
                 </li>
                 <li className="mb-4">
                   <h4 className="font-semibold text-black text-left lg:text-justify">
-                    Salesforce Support & Maintenance:
+                    Salesforce Support &amp; Maintenance:
                   </h4>
                   <p className="text-bluegray text-left lg:text-justify">
                     Ongoing support to ensure your Salesforce system operates smoothly, with regular updates and issue resolution.
@@ -95,10 +95,10 @@ const Provide = () => {
                 </li>
                 <li className="mb-4">
                   <h4 className="font-semibold text-black text-left lg:text-justify">
-                    Training & Adoption:
+                    Training &amp; Adoption:
                   </h4>
                   <p className="text-bluegray text-left lg:text-justify">
-                    Empower your team with hands-on Salesforce training to maximize user adoption and efficiency, ensuring they are proficient in utilizing the platform's full potential.
+                    Empower your team with hands-on Salesforce training to maximize user adoption and efficiency, ensuring they are proficient in utilizing the platform&#39;s full potential.
                   </p>
                 </li>
               </ul>

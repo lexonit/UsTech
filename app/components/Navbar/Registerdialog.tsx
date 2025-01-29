@@ -1,7 +1,7 @@
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment, useState } from 'react'
 import { LockClosedIcon } from '@heroicons/react/20/solid'
-
+import Image from 'next/image' // Import Next.js Image component
 
 const Register = () => {
     let [isOpen, setIsOpen] = useState(false)
@@ -16,7 +16,7 @@ const Register = () => {
 
     return (
         <>
-            <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto  sm:pr-0">
+            <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:pr-0">
                 <div className='hidden lg:block'>
                     <button className="text-blue text-lg font-medium ml-9 py-5 px-16 transition duration-150 ease-in-out leafbutton bg-lightblue hover:text-white hover:bg-blue" onClick={openModal}>
                         Sign up
@@ -50,14 +50,16 @@ const Register = () => {
                                 leaveTo="opacity-0 scale-95"
                             >
                                 <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
-
                                     <div className="flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
                                         <div className="w-full max-w-md space-y-8">
                                             <div>
-                                                <img
+                                                <Image
                                                     className="mx-auto h-12 w-auto"
                                                     src="/assets/logo/logo.jpg"
                                                     alt="Your Company"
+                                                    width={48} // Adjust width
+                                                    height={48} // Adjust height
+                                                    priority
                                                 />
                                                 <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">
                                                     Register your account
@@ -108,7 +110,6 @@ const Register = () => {
                                                             Remember me
                                                         </label>
                                                     </div>
-
                                                 </div>
 
                                                 <div>
@@ -126,11 +127,10 @@ const Register = () => {
                                         </div>
                                     </div>
 
-
                                     <div className="mt-4 flex justify-end">
                                         <button
                                             type="button"
-                                            className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 "
+                                            className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900"
                                             onClick={closeModal}
                                         >
                                             Got it, thanks!
