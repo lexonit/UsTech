@@ -1,7 +1,7 @@
 import Banner from "./components/Banner/Banner";
 import Buyers from "./components/Buyers/index";
 import Clientsay from "./components/Clientsay/index";
-import Companies from "./components/Companies/Companies";
+// import Companies from "./components/Companies/Companies";
 import FAQs from "./components/FAQs/Faqs";
 import Network from "./components/Network/index";
 import Newsletter from "./components/Newsletter/Newsletter";
@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main>
       <Banner />
-      <Companies />
+      {/* <Companies /> */}
       <Buyers />
       <Why />
       <Provide />

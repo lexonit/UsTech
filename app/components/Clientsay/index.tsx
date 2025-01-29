@@ -2,15 +2,12 @@ import React from "react";
 
 const Clients = () => {
   const clients = [
-    { name: "CG", image: "/assets/banner/demo-form-image-emea.png" },
-    { name: "PWC", image: "/assets/banner/demo-form-image-emea.png" },
-    { name: "CVS Health", image: "/path/to/cvs-health-image.jpg" },
-    { name: "RFI", image: "/path/to/rfi-image.jpg" },
-    { name: "B.A.G Footwear", image: "/path/to/bag-footwear-image.jpg" },
-    { name: "Area 71", image: "/path/to/area-71-image.jpg" },
-    { name: "Infinite", image: "/path/to/infinite-image.jpg" },
-    { name: "Service and Solutions IT", image: "/path/to/ssi-image.jpg" },
-    { name: "TechieMaya", image: "/path/to/techiemaya-image.jpg" }
+    { name: "CG", image: "/assets/logo/capgemini_logo.jpg" },
+    { name: "PWC", image: "/assets/logo/pwc_logo.jpg" },
+    { name: "CVS Health", image: "/assets/logo/cvs_health_logo.jpg" },
+    { name: "RFI", image: "/assets/logo/RF Logo.jpg" },
+    { name: "Area 71", image: "/assets/logo/area71_venture_limited_logo.jpg" },
+    { name: "TechieMaya", image: "/assets/logo/TechieMayaLogo.png" }
   ];
 
   return (
@@ -35,22 +32,22 @@ const Clients = () => {
           className="d-flex"
           style={{
             whiteSpace: "nowrap", // Prevent line breaks
-            animation: "scrollLeft 20s linear infinite", // Apply animation for infinite scroll
+            animation: "scrollLeft 15s linear infinite", // Adjusted speed for continuous effect
           }}
         >
-          {clients.map((client, index) => (
+          {clients.concat(clients).map((client, index) => ( // Duplicating logos for infinite scroll effect
             <div
               key={index}
-              className="d-inline-block mx-4"
+              className="d-inline-block mx-6" // Adjusting gap between logos
               style={{
-                minWidth: "150px", // Adjust minimum width as necessary
-                display: "inline-block", // Ensure horizontal stacking
-                marginRight: "20px", // Adds space between items
+                minWidth: "150px", // Minimum width for logos
+                display: "inline-block", // Horizontal stacking of items
+                marginRight: "30px", // Adds space between logos
               }}
             >
-              {/* Circular Image */}
+              {/* Fixed size image container */}
               <div
-                className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 bg-indigo-100 rounded-full overflow-hidden mb-4 shadow-xl hover:shadow-2xl transition-shadow duration-300"
+                className="w-40 h-40 sm:w-48 sm:h-48 rounded-full overflow-hidden mb-4"
                 style={{
                   display: "flex",
                   alignItems: "center",
@@ -60,15 +57,9 @@ const Clients = () => {
                 <img
                   src={client.image}
                   alt={client.name}
-                  className="w-full h-full object-cover"
-                  style={{
-                    borderRadius: "50%", // Ensures the image is circular
-                  }}
+                  className="w-full h-full object-contain" // Ensures logo fits within the container
                 />
               </div>
-              <h4 className="text-xs sm:text-sm md:text-lg font-medium text-indigo-800 text-center">
-                {client.name}
-              </h4>
             </div>
           ))}
         </div>
