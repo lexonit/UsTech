@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image"; // Import Next.js Image component
 
 const Clients = () => {
   const clients = [
@@ -7,7 +8,7 @@ const Clients = () => {
     { name: "CVS Health", image: "/assets/logo/cvs_health_logo.jpg" },
     { name: "RFI", image: "/assets/logo/RF Logo.jpg" },
     { name: "Area 71", image: "/assets/logo/area71_venture_limited_logo.jpg" },
-    { name: "TechieMaya", image: "/assets/logo/TechieMayaLogo.png" }
+    { name: "TechieMaya", image: "/assets/logo/TechieMayaLogo.png" },
   ];
 
   return (
@@ -20,44 +21,23 @@ const Clients = () => {
       </p>
 
       {/* Horizontal Scrolling Section */}
-      <div
-        className="clients-scroll-container overflow-hidden"
-        style={{
-          position: "relative", // To contain the animation
-          width: "100%", // Full width for the container
-        }}
-      >
+      <div className="clients-scroll-container overflow-hidden relative w-full">
         {/* Inner scrollable div with auto scrolling */}
         <div
-          className="d-flex"
-          style={{
-            whiteSpace: "nowrap", // Prevent line breaks
-            animation: "scrollLeft 15s linear infinite", // Adjusted speed for continuous effect
-          }}
+          className="flex space-x-12 animate-scroll"
+          style={{ whiteSpace: "nowrap" }}
         >
-          {clients.concat(clients).map((client, index) => ( // Duplicating logos for infinite scroll effect
-            <div
-              key={index}
-              className="d-inline-block mx-6" // Adjusting gap between logos
-              style={{
-                minWidth: "150px", // Minimum width for logos
-                display: "inline-block", // Horizontal stacking of items
-                marginRight: "30px", // Adds space between logos
-              }}
-            >
-              {/* Fixed size image container */}
-              <div
-                className="w-40 h-40 sm:w-48 sm:h-48 rounded-full overflow-hidden mb-4"
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
-                <img
+          {clients.concat(clients).map((client, index) => (
+            <div key={index} className="flex-shrink-0">
+              <div className="w-40 h-40 sm:w-48 sm:h-48 rounded-full overflow-hidden mb-4 flex items-center justify-center">
+                <Image
                   src={client.image}
                   alt={client.name}
-                  className="w-full h-full object-contain" // Ensures logo fits within the container
+                  width={150} // Set width
+                  height={150} // Set height
+                  objectFit="contain" // Ensures the image fits inside
+                  quality={80} // Optimize image quality
+                  priority // Improves loading speed for important images
                 />
               </div>
             </div>
@@ -69,8 +49,13 @@ const Clients = () => {
       <style>
         {`
           @keyframes scrollLeft {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-100%); }
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); } /* Adjusted to avoid gaps */
+          }
+
+          .animate-scroll {
+            display: flex;
+            animation: scrollLeft 15s linear infinite;
           }
         `}
       </style>
