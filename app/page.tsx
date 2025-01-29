@@ -4,7 +4,7 @@ import Clientsay from "./components/Clientsay/index";
 // import Companies from "./components/Companies/Companies";
 import FAQs from "./components/FAQs/Faqs";
 import Network from "./components/Network/index";
-import Newsletter from "./components/Newsletter/Newsletter";
+// import Newsletter from "./components/Newsletter/Newsletter";
 import Provide from "./components/Provide/index";
 import Why from "./components/Why/index";
 export default function Home() {
@@ -18,7 +18,7 @@ export default function Home() {
       <Network />
       <Clientsay />
       <FAQs />
-      <Newsletter />
+      {/* <Newsletter /> */}
     </main>
   );
 }

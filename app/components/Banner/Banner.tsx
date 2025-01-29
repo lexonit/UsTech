@@ -53,11 +53,11 @@ const Banner = () => {
         </div>
 
         {/* Why Choose Us Section */}
-        <div className="py-10 bg-gray-50">
+        <div className="py-10">
           <h2 className="text-3xl font-bold text-center text-navyblue mb-6">
             Why Choose Us?
           </h2>
-          <ul className="max-w-4xl mx-auto text-lg text-gray-700 list-disc list-inside">
+          <ul className="max-w-4xl mx-auto text-lg  list-disc list-inside">
             <li>Certified Salesforce professionals.</li>
             <li>Proven track record of successful implementations.</li>
             <li>Customized solutions for every business.</li>
@@ -76,13 +76,14 @@ const Banner = () => {
 
         {/* Contact Us Section */}
         <div className="py-10 text-center bg-blue-50">
-          <h2 className="text-3xl font-bold text-navyblue mb-4">
-            Contact Us Today
-          </h2>
+         
           <p className="text-lg text-gray-700 mb-5">
             Take your Salesforce experience to the next level. Reach out for a
             consultation!
           </p>
+          <h2 className="text-2xl  text-navyblue mb-4">
+            Contact Us Today
+          </h2>
           <div className="flex justify-center space-x-4">
             <button
               type="button"
