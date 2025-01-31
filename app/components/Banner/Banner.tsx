@@ -43,11 +43,11 @@ const Banner = () => {
             }}
           >
             <Image
-              src="/assets/banner/heroimag1.svg"
+              src="/assets/banner/rafiki.svg"
               alt="banner-image"
               width={900}
-              height={600}
-              className="rounded-lg mx-auto shadow-lg"
+              height={400}
+              className="rounded-lg mx-auto "
             />
           </motion.div>
         </div>
