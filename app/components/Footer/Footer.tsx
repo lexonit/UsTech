@@ -31,15 +31,15 @@ const products: ProductType[] = [
 
 const Footer = () => {
     return (
-        <div className="bg-darkblue -mt-20">
-            <div className="mx-auto max-w-2xl pt-48 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-                <div className="my-24 grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 lg:grid-cols-12 xl:gap-x-8">
+        <div className="bg-darkblue mt-10">
+            <div className="mx-auto max-w-2xl pt-12 px-4 sm:px-6 lg:max-w-7xl lg:px-2">
+                <div className="grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 lg:grid-cols-12 xl:gap-x-8">
 
                     {/* COLUMN-1 */}
                     <div className='col-span-4 md:col-span-12 lg:col-span-4'>
                     <Image src={'/assets/logo/UsTechLogo2.svg'} alt="logo" width={200} height={80} />
 
-                        <div className='flex gap-4'>
+                        <div className='flex gap-4 mt-3'>
                             <Link href="https://facebook.com" className='footer-fb-icons'>
                                 <Image src={'/assets/footer/facebook.svg'} alt="facebook" width={15} height={20} />
                             </Link>
@@ -92,7 +92,7 @@ const Footer = () => {
                         </div>
                         <div className="flex gap-2 mt-10">
                             <Image src={'/assets/footer/email.svg'} alt="email-icon" width={24} height={24} />
-                            <h5 className="text-base font-normal text-offwhite">info@USTechLightningSolutions.com</h5>
+                            <h5 className="text-base font-normal text-offwhite">info@ustech.com</h5>
                         </div>
                     </div>
 

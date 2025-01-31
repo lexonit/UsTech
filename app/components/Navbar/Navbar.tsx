@@ -37,19 +37,15 @@ const Navbar = () => {
           <div className="relative flex h-20 items-center justify-between">
             <div className="flex flex-1 items-center sm:items-stretch sm:justify-start">
               {/* LOGO */}
-              <div className="flex flex-shrink-0 items-center">
-                <Image
-                  src="/assets/logo/UsTechLogo.svg"
-                  alt="dsign-logo"
-                  width={100} // Adjust as needed
-                  height={80} // Adjust as needed
-                />
-
-                {/* <img
-                  className="hidden h-full w-full lg:block"
-                  src={"/assets/logo/logo.jpg"}
-                  alt="dsign-logo"
-                /> */}
+              <div className="flex flex-shrink-0 items-center ">
+                <Link href={'/'}>
+                  <Image
+                    src="/assets/logo/main-logo.svg"
+                    alt="us-tech-logo"
+                    width={200} // Adjust as needed
+                    height={80} // Adjust as needed
+                  />
+                </Link>
               </div>
 
               {/* LINKS */}

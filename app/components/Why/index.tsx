@@ -35,12 +35,12 @@ const Why = () => {
           {/* COLUMN-1 */}
           <div className="relative lg:-ml-20">
             <Image
-              src="/assets/why/iPad.png"
+              src="/assets/why/about-us.svg"
               alt="iPad-image"
               layout="responsive"
               width={4000}
               height={900}
-              className="rounded-lg shadow-lg"
+              // className="rounded-lg shadow-lg"
             />
           </div>
 

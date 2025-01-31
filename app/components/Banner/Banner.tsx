@@ -1,5 +1,5 @@
-'use client';
-import { useRouter } from 'next/navigation'; // Use next/navigation instead of next/router
+"use client";
+import { useRouter } from "next/navigation"; // Use next/navigation instead of next/router
 import Image from "next/image";
 import { motion } from "framer-motion"; // Import motion for animations
 
@@ -8,16 +8,16 @@ const Banner = () => {
 
   // Handler to navigate to the Contact Us page
   const handleGetInTouch = () => {
-    router.push('/contact'); // Navigate to the contact-us page
+    router.push("/contact"); // Navigate to the contact-us page
   };
 
   return (
     <main>
       <div className="px-6 lg:px-8">
         {/* Banner Section */}
-        <div className="mx-auto max-w-7xl pt-16 sm:pt-20 pb-20 banner-image">
-          <div className="text-center">
-            <h1 className="text-4xl font-semibold text-navyblue sm:text-5xl lg:text-7xl md:4px lh-96">
+        <div className="mx-auto max-w-7xl pt-16 sm:pt-20 pb-20 banner-image flex flex-wrap">
+          <div className="text-center lg:w-[50%] ">
+            <h1 className="text-2xl font-semibold text-navyblue sm:text-2xl lg:text-3xl md:4px lh-96">
               Welcome to US Tech <br />
             </h1>
             <p className="mt-6 text-lg leading-8 text-bluegray mb-5">
@@ -41,9 +41,10 @@ const Banner = () => {
               repeat: Infinity, // Infinite loop
               ease: "easeInOut", // Smooth easing
             }}
+            className="lg:w-[50%]"
           >
             <Image
-              src="/assets/banner/rafiki.svg"
+              src="/assets/banner/hero.svg"
               alt="banner-image"
               width={900}
               height={400}
@@ -53,37 +54,36 @@ const Banner = () => {
         </div>
 
         {/* Why Choose Us Section */}
-        <div className="py-10">
-          <h2 className="text-3xl font-bold text-center text-navyblue mb-6">
-            Why Choose Us?
-          </h2>
-          <ul className="max-w-4xl mx-auto text-lg  list-disc list-inside">
-            <li>Certified Salesforce professionals.</li>
-            <li>Proven track record of successful implementations.</li>
-            <li>Customized solutions for every business.</li>
-            <li>Exceptional post-implementation support.</li>
-          </ul>
-          <div className="mt-8 flex justify-center">
+        <div className="py-10 flex justify-center items-center flex-wrap">
+          <div className="mt-8 flex justify-center lg:w-[50%]">
             <Image
-              src="https://img.freepik.com/free-photo/male-speaker-giving-presentation-hall-university-workshop-audience-conference-hall_155003-27445.jpg?t=st=1737977314~exp=1737980914~hmac=ad041f108546c0ae90e4afab2e38242226092293a4e5ab5c9d43a2895e55be60&w=996"
+              src="/assets/banner/why-us.svg"
               alt="Why Choose Us"
-              width={800}
+              width={700}
               height={400}
-              className="rounded-lg shadow-md"
+              className=""
             />
+          </div>
+          <div className="flex flex-col justify-center items-center">
+            <h2 className="text-3xl font-bold text-center text-navyblue mb-6">
+              Why Choose Us?
+            </h2>
+            <ul className="max-w-4xl mx-auto text-lg  list-disc list-inside">
+              <li>Certified Salesforce professionals.</li>
+              <li>Proven track record of successful implementations.</li>
+              <li>Customized solutions for every business.</li>
+              <li>Exceptional post-implementation support.</li>
+            </ul>
           </div>
         </div>
 
         {/* Contact Us Section */}
         <div className="py-10 text-center bg-blue-50">
-         
           <p className="text-lg text-gray-700 mb-5">
             Take your Salesforce experience to the next level. Reach out for a
             consultation!
           </p>
-          <h2 className="text-2xl  text-navyblue mb-4">
-            Contact Us Today
-          </h2>
+          <h2 className="text-2xl  text-navyblue mb-4">Contact Us Today</h2>
           <div className="flex justify-center space-x-4">
             <button
               type="button"

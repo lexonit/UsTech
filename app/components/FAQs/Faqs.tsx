@@ -110,7 +110,7 @@ const FAQs = () => {
           <button
             onClick={showMore}
             type="button"
-            className="px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-medium text-lg rounded-lg shadow-md hover:shadow-lg hover:opacity-90 transition-all duration-300"
+            className="px-8 mb-5 py-4 text-white bg-blue-500 hover:bg-blue-600 rounded-md font-medium shadow-md"
           >
             Show More
           </button>
@@ -119,5 +119,6 @@ const FAQs = () => {
     </div>
   );
 };
+
 
 export default FAQs;
