@@ -1,8 +1,12 @@
- "use client"
-
+ 'use client'
 import React, { useState } from "react";
 import { motion } from "framer-motion"; // To handle animations
 
+
+// export const metadata = {
+//   title: 'Faq -  US Tech Lightning Solutions',
+//   description: 'Salesforce Partnership',
+// }
 const FAQPage = () => {
   const faqData = [
     {

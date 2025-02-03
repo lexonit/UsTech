@@ -46,8 +46,8 @@ const Footer = () => {
                             <Link href="https://twitter.com" className='footer-icons'>
                                 <Image src={'/assets/footer/twitter.svg'} alt="twitter" width={20} height={20} />
                             </Link>
-                            <Link href="https://instagram.com" className='footer-icons'>
-                                <Image src={'/assets/footer/instagram.svg'} alt="instagram" width={20} height={20} />
+                            <Link href="https://www.linkedin.com/company/68655987/" className='footer-icons bg-white'>
+                                <Image src={'/assets/footer/linkedinlogo.svg'} alt="instagram" width={20} height={20} />
                             </Link>
                         </div>
                     </div>
@@ -88,11 +88,11 @@ const Footer = () => {
                         </div>
                         <div className="flex gap-2 mt-10">
                             <Image src={'/assets/footer/telephone.svg'} alt="telephone-icon" width={24} height={24} />
-                            <h5 className="text-base font-normal text-offwhite">+ 45 34 11 44 11</h5>
+                            <h5 className="text-base font-normal text-offwhite">+1(773)865-4213</h5>
                         </div>
                         <div className="flex gap-2 mt-10">
                             <Image src={'/assets/footer/email.svg'} alt="email-icon" width={24} height={24} />
-                            <h5 className="text-base font-normal text-offwhite">info@ustech.com</h5>
+                            <h5 className="text-base font-normal text-offwhite">support@ustechlightningsolutions.com</h5>
                         </div>
                     </div>
 

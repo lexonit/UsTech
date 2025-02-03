@@ -3,6 +3,26 @@ import { useRouter } from "next/navigation"; // Use next/navigation instead of n
 import Image from "next/image";
 import { motion } from "framer-motion"; // Import motion for animations
 
+export const metadata = {
+  title: 'Home -  US Tech Lightning Solutions',
+  // description: 'Specializing in quality code development, we ensure your software projects are built with precision, reliability, and cutting-edge technology.',
+  // icons: {
+  //   icon: '/favicon.ico',
+  // },
+  // openGraph: {
+  //   title: 'Lexon IT - Expert IT Solutions & Services',
+  //   description:
+  //     'Lexon IT offers expert IT services and technology solutions to businesses. We specialize in cloud computing, network management, cybersecurity, and more.',
+  //   images: '/logo.svg',
+  //   url: 'https://www.lexonit.com',
+  // },
+  // twitter: {
+  //   title: 'Lexon IT - Expert IT Solutions & Services',
+  //   description:
+  //     'Lexon IT offers expert IT services and technology solutions to businesses. We specialize in cloud computing, network management, cybersecurity, and more.',
+  //   images: '/logo.svg',
+  // },
+};
 const Banner = () => {
   const router = useRouter(); // Initialize the navigation hook
 
@@ -21,7 +41,7 @@ const Banner = () => {
               Welcome to US Tech <br />
             </h1>
             <p className="mt-6 text-lg leading-8 text-bluegray mb-5">
-              Your trusted Salesforce consulting partner, delivering tailored
+              Your trusted Salesforce Solution partner, delivering tailored
               solutions to elevate your business.
               <br /> We specialize in implementing, optimizing, and maintaining
               Salesforce to meet your unique needs.

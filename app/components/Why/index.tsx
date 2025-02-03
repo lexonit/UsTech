@@ -21,10 +21,7 @@ const whydata: whydata[] = [
     subheading:
       "Our certified Salesforce professionals are dedicated to providing exceptional service. We value collaboration, integrity, and a client-first approach.",
   },
-  {
-    heading: "Address",
-    subheading: "US Tech Lightning Solutions",
-  },
+ 
 ];
 
 const Why = () => {
@@ -49,9 +46,7 @@ const Why = () => {
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-center lg:text-left ">
               About Us
             </h1>
-            <h3 className="text-2xl pt-4  text-center lg:text-left text-gray-800">
-              Our Story
-            </h3>
+           
             <h4 className="text-lg pt-4 font-normal text-center lg:text-left text-bluegray lg:text-base">
               At US Tech Lightning Solutions, we are passionate about helping
               businesses unlock their full potential with Salesforce. Located in
