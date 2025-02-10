@@ -4,7 +4,7 @@ import Footer from './components/Footer/Footer';
 
 
 export const metadata = {
-  title: 'US Tech',
+  title: 'US Tech Lighting Solutions',
   description: 'Salesforce Partnership',
 }
 

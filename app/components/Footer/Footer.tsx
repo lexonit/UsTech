@@ -40,11 +40,8 @@ const Footer = () => {
                     <Image src={'/assets/logo/UsTechLogo2.svg'} alt="logo" width={200} height={80} />
 
                         <div className='flex gap-4 mt-3'>
-                            <Link href="https://facebook.com" className='footer-fb-icons'>
-                                <Image src={'/assets/footer/facebook.svg'} alt="facebook" width={15} height={20} />
-                            </Link>
-                            <Link href="https://twitter.com" className='footer-icons'>
-                                <Image src={'/assets/footer/twitter.svg'} alt="twitter" width={20} height={20} />
+                            <Link href="https://www.linkedin.com/company/68655987/" className='footer-icons'>
+                                <Image src={'/assets/footer/linkedin.svg'} alt="twitter" width={20} height={20} />
                             </Link>
                             <Link href="https://instagram.com" className='footer-icons'>
                                 <Image src={'/assets/footer/instagram.svg'} alt="instagram" width={20} height={20} />
@@ -88,11 +85,11 @@ const Footer = () => {
                         </div>
                         <div className="flex gap-2 mt-10">
                             <Image src={'/assets/footer/telephone.svg'} alt="telephone-icon" width={24} height={24} />
-                            <h5 className="text-base font-normal text-offwhite">+ 45 34 11 44 11</h5>
+                            <h5 className="text-base font-normal text-offwhite">+1(773)865-4213 </h5>
                         </div>
                         <div className="flex gap-2 mt-10">
                             <Image src={'/assets/footer/email.svg'} alt="email-icon" width={24} height={24} />
-                            <h5 className="text-base font-normal text-offwhite">info@ustech.com</h5>
+                            <h5 className="text-base font-normal text-offwhite">support@ustechlightningsolutions.com</h5>
                         </div>
                     </div>
 
