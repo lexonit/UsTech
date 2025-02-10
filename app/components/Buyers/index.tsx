@@ -23,7 +23,7 @@ const cardData: cardDataType[] = [
     {
         imgSrc: '/assets/buyers/happybuyers.svg',
         percent: '100% ',
-        heading: "Happy",
+        heading: "Happy Customers",
         subheading: "",
     },
     {
