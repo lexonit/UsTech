@@ -10,26 +10,26 @@ const Aboutdata: datatype[] = [
     {
         imgSrc: "/assets/network/america.svg",
         country: "United States",
-        paragraph: 'Event madness gathering innoies, & tech enthusiasts in Speced.',
+        paragraph: 'Sales Cloud enables sales teams to close deals faster with AI-powered insights.',
 
     },
     {
         imgSrc: "/assets/network/bangladesh.svg",
         country: "Bangladesh",
-        paragraph: 'Event madness gathering innoies, & tech enthusiasts in Speced.',
+        paragraph: 'Financial Services Cloud empowers banks, insurers, and wealth managers.',
 
     },
     
     {
         imgSrc: "/assets/network/australia.svg",
         country: "Australia",
-        paragraph: 'Event madness gathering innoies, & tech enthusiasts in Speced.',
+        paragraph: 'Customization – Tailor workflows, dashboards, and processes to match your business needs.',
 
     },
     {
         imgSrc: "/assets/network/china.svg",
         country: "China",
-        paragraph: 'Event madness gathering innoies, & tech enthusiasts in Speced.',
+        paragraph: 'Personalized interactions lead to higher customer retention rates.',
 
     },
 ]
