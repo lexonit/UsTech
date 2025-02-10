@@ -53,7 +53,7 @@ const Provide = () => {
                 Our Expertise
               </p>
               <p className="text-base lg:text-lg mt-4 font-normal leading-relaxed text-center lg:text-start text-bluegray">
-                At US Tech, we offer a wide range of Salesforce services tailored to your needs&#39;:
+                At US Tech, we offer a wide range of Salesforce services tailored to your needs :
               </p>
               
               {/* List without bullet points */}
