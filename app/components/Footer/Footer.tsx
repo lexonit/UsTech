@@ -40,11 +40,8 @@ const Footer = () => {
                     <Image src={'/assets/logo/UsTechLogo2.svg'} alt="logo" width={200} height={80} />
 
                         <div className='flex gap-4 mt-3'>
-                            <Link href="https://facebook.com" className='footer-fb-icons'>
-                                <Image src={'/assets/footer/facebook.svg'} alt="facebook" width={15} height={20} />
-                            </Link>
-                            <Link href="https://twitter.com" className='footer-icons'>
-                                <Image src={'/assets/footer/twitter.svg'} alt="twitter" width={20} height={20} />
+                            <Link href="https://www.linkedin.com/company/68655987/" className='footer-icons'>
+                                <Image src={'/assets/footer/linkedin.svg'} alt="twitter" width={20} height={20} />
                             </Link>
                             <Link href="https://www.linkedin.com/company/68655987/" className='footer-icons bg-white'>
                                 <Image src={'/assets/footer/linkedinlogo.svg'} alt="instagram" width={20} height={20} />
@@ -100,12 +97,12 @@ const Footer = () => {
 
                 {/* All Rights Reserved */}
                 <div className='py-10 lg:flex items-center justify-between border-t border-t-bordertop'>
-                    <h4 className='text-offwhite text-sm text-center lg:text-start font-normal'>@2025 Agency. All Rights Reserved by <Link href="https://lexonit.com/" target="_blank"> lexonit.com</Link></h4>
-                    <div className="flex gap-5 mt-5 lg:mt-0 justify-center lg:justify-start">
+                    <h4 className='text-offwhite text-sm text-center lg:text-start font-normal'><Link href="https://ustechlightningsolutions.com" target="_blank"> US Tech Lightning Solutions </Link>@  All Rights Reserved - 2025</h4>
+                    {/* <div className="flex gap-5 mt-5 lg:mt-0 justify-center lg:justify-start">
                         <h4 className='text-offwhite text-sm font-normal'><Link href="/" target="_blank">Privacy policy</Link></h4>
                         <div className="h-5 bg-bordertop w-0.5"></div>
                         <h4 className='text-offwhite text-sm font-normal'><Link href="/" target="_blank">Terms & conditions</Link></h4>
-                    </div>
+                    </div> */}
                 </div>
 
             </div>

@@ -2,6 +2,7 @@
 // app/contact/page.tsx or wherever your ContactUsPage component is located
 import React, { useState } from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 
 // Set metadata for this page
@@ -11,6 +12,7 @@ import Image from "next/image";
 // };
 
 const ContactUsPage = () => {
+  const route = useRouter()
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -28,6 +30,7 @@ const ContactUsPage = () => {
   const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
     console.log("Form Submitted:", formData);
+    return route.push('/thank-you')
   };
 
   return (

@@ -49,14 +49,11 @@ const Provide = () => {
           {/* COLUMN-1 */}
           <div className="col-span-6 flex justify-center lg:col-span-6">
             <div className="flex flex-col justify-center p-6 lg:p-10">
-              <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-center lg:text-start">
-                Services
-              </h3>
               <p className="text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight mt-4 text-center lg:text-start">
                 Our Expertise
               </p>
               <p className="text-base lg:text-lg mt-4 font-normal leading-relaxed text-center lg:text-start text-bluegray">
-                At US Tech, we offer a wide range of Salesforce services tailored to your needs&#39;:
+                At US Tech, we offer a wide range of Salesforce services tailored to your needs :
               </p>
               
               {/* List without bullet points */}
