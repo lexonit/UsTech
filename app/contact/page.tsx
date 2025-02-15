@@ -14,14 +14,14 @@ const ContactUsPage = () => {
     message: "",
   });
 
-  const handleChange = (e: { target: { name: any; value: any; }; }) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     });
   };
 
-  const handleSubmit = async (e: { preventDefault: () => void; }) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
       await emailjs.send(
@@ -58,7 +58,7 @@ const ContactUsPage = () => {
             Contact Form
           </h3>
           <form onSubmit={handleSubmit}>
-            {["name", "email", "phone"].map((field) => (
+            {(["name", "email", "phone"] as Array<keyof typeof formData>).map((field) => (
               <div className="mb-4" key={field}>
                 <label htmlFor={field} className="block text-gray-700 font-semibold capitalize">
                   {field}
