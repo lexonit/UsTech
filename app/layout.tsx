@@ -17,11 +17,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <GoogleTagManager gtmId="GTM-TJPHQKJW" />
       <body>
         <Navbar />
         {children}
         <Footer />
+        <GoogleTagManager gtmId='GTM-TJPHQKJW'/>
       </body>
     </html>
   )
