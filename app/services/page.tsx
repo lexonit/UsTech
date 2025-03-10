@@ -60,6 +60,7 @@ const ServicePage: React.FC = () => (
           title="Training & Adoption"
           text="Empower your team with hands-on Salesforce training to maximize adoption and efficiency."
         />
+        <div>Test to check</div>
       </div>
 
       {/* Customer 360 Solutions Section */}
