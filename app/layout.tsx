@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/next-script-for-ga */
 import './globals.css';
 import Navbar from './components/Navbar/index';
 import Footer from './components/Footer/Footer';
