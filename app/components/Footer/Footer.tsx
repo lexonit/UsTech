@@ -91,7 +91,7 @@ return (
                     </div>
                     <div className="flex gap-2 mt-10">
                         <Image src={'/assets/footer/email.svg'} alt="email-icon" width={24} height={24} />
-                        <a href="email:support@ustechlightningsolutions.com" className="text-base font-normal text-offwhite hover:underline">support@ustechlightningsolutions.com</a>
+                        <a href="mailto:support@ustechlightningsolutions.com" className="text-base font-normal text-offwhite hover:underline">support@ustechlightningsolutions.com</a>
                     </div>
                 </div>
 
