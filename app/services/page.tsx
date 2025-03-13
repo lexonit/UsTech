@@ -60,6 +60,16 @@ const ServicePage: React.FC = () => (
           title="Training & Adoption"
           text="Empower your team with hands-on Salesforce training to maximize adoption and efficiency."
         />
+        <ServiceCard
+          imgSrc="/assets/services/AISpecialist.jpg"
+          title="AI Specialist"
+          text="Leverage the power of Salesforce AI to drive intelligent automation, personalized customer experiences, and data-driven decision-making."
+        />
+        <ServiceCard
+          imgSrc="/assets/services/PSS.jpg"
+          title="Public Sector Solutions"
+          text="Empower government and public sector organizations with Salesforce Public Sector Solutions for efficient service delivery, compliance, and citizen engagement."
+        />
       </div>
 
       {/* Customer 360 Solutions Section */}
