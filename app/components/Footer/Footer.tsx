@@ -85,9 +85,7 @@ return (
                     </div>
                     <div className="flex gap-2 mt-10">
                         <Image src={'/assets/footer/telephone.svg'} alt="telephone-icon" width={24} height={24} />
-                        <a href="tel:+17738654213" className="text-base font-normal text-offwhite hover:underline">
-    +1 (773) 865-4213
-</a>
+                        <a href="tel:+18723307051" className="text-base font-normal text-offwhite hover:underline">+1 (872)330-7051</a>
                     </div>
                     <div className="flex gap-2 mt-10">
                         <Image src={'/assets/footer/email.svg'} alt="email-icon" width={24} height={24} />
