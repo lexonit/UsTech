@@ -98,11 +98,11 @@ return (
             {/* All Rights Reserved */}
             <div className='py-10 lg:flex items-center justify-between border-t border-t-bordertop'>
                 <h4 className='text-offwhite text-sm text-center lg:text-start font-normal'><Link href="https://ustechlightningsolutions.com" target="_blank"> US Tech Lightning Solutions </Link>@  All Rights Reserved - 2025</h4>
-                {/* <div className="flex gap-5 mt-5 lg:mt-0 justify-center lg:justify-start">
-                    <h4 className='text-offwhite text-sm font-normal'><Link href="/" target="_blank">Privacy policy</Link></h4>
-                    <div className="h-5 bg-bordertop w-0.5"></div>
-                    <h4 className='text-offwhite text-sm font-normal'><Link href="/" target="_blank">Terms & conditions</Link></h4>
-                </div> */}
+                 <div className="flex gap-5 mt-5 lg:mt-0 justify-center lg:justify-start">
+                    <h4 className='text-offwhite text-sm font-normal'><Link href="https://www.privacypolicies.com/live/58790700-bc67-4b3c-a7f5-556eef19003d" target="_blank">Privacy Policy</Link></h4>
+                    {/*<div className="h-5 bg-bordertop w-0.5"></div>
+                    <h4 className='text-offwhite text-sm font-normal'><Link href="/" target="_blank">Terms & conditions</Link></h4>*/}
+                </div> 
             </div>
 
         </div>
