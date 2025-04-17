@@ -21,7 +21,7 @@ const Banner = () => {
               Welcome to US Tech <br />
             </h1>
             <p className="mt-6 text-lg leading-8 text-bluegray mb-5">
-              Your trusted Salesforce solution partner, delivering tailored
+              Your trusted Salesforce solution partner in every way, delivering tailored
               solutions to elevate your business.
               <br /> We specialize in implementing, optimizing, and maintaining
               Salesforce to meet your unique needs.
